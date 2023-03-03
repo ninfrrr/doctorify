@@ -1,4 +1,4 @@
-# Kelompok doDonor
+# Kelompok docdoc
 - Ketua Kelompok : Nindya Fathul Risya - 20/460556/TK/51145
 - Anggota 1 : Siti Malatania - 20/456380/TK/50510
 - Anggota 2 : Luthfi Izzuddin Hanif - 20/463605/TK/51597
@@ -38,8 +38,8 @@ sendiri oleh pasien. Pasien dapat memilih untuk bertemu langsung dengan dokter d
 rumah sakit yang dipilih atau melalui fitur chat dengan dokter.
 
 ### Analisis dan Referensi Kompetitor
-<img src="analisis kompetitor/halodoc.jpg" class="img-responsive" alt="">
+<img src="analisis-kompetitor/halodoc.jpg" class="img-responsive" alt="">
 
-<img src="analisis kompetitor/alodokter.jpg" class="img-responsive" alt="">
+<img src="analisis-kompetitor/alodokter.jpg" class="img-responsive" alt="">
 
-<img src="analisis kompetitor/klikdokter.jpg" class="img-responsive" alt="">
+<img src="analisis-kompetitor/klikdokter.jpg" class="img-responsive" alt="">

@@ -1,7 +1,7 @@
 <h1> Kelompok docdoc </h1> 
-- Ketua Kelompok : Nindya Fathul Risya - 20/460556/TK/51145
-- Anggota 1 : Siti Malatania - 20/456380/TK/50510
-- Anggota 2 : Luthfi Izzuddin Hanif - 20/463605/TK/51597
+<p>- Ketua Kelompok : Nindya Fathul Risya - 20/460556/TK/51145</p>
+<p>- Anggota 1 : Siti Malatania - 20/456380/TK/50510</p>
+<p>- Anggota 2 : Luthfi Izzuddin Hanif - 20/463605/TK/51597</p>
 
 <h3> Project Senior Project TI </h3>
 <p>Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik, Universitas Gadjah Mada</p>

@@ -38,8 +38,6 @@ sendiri oleh pasien. Pasien dapat memilih untuk bertemu langsung dengan dokter d
 rumah sakit yang dipilih atau melalui fitur chat dengan dokter.</p>
 
 <h3> Analisis dan Referensi Kompetitor </h3>
-<img src="analisis-kompetitor/halodoc.jpg" class="img-responsive" alt="">
-
-<img src="analisis-kompetitor/alodokter.jpg" class="img-responsive" alt="">
-
-<img src="analisis-kompetitor/klikdokter.jpg" class="img-responsive" alt="">
+<img src="analisis-kompetitor/halodoc.jpg" class="img-responsive" alt="">
+<img src="analisis-kompetitor/alodokter.jpg" class="img-responsive" alt="">
+<img src="analisis-kompetitor/klikdokter.jpg" class="img-responsive" alt="">

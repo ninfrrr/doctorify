@@ -86,3 +86,6 @@ Memberitahu jadwal yang tersedia : Dokter memberi tahu jadwal yang dokter yang t
 <img src="modul2/lofi (5).jpg" class="img-responsive" alt="">
 <img src="modul2/lofi (6).jpg" class="img-responsive" alt="">
 <img src="modul2/lofi (7).jpg" class="img-responsive" alt="">
+
+<h3> Gantt Chart </h3>
+<img src="modul2/gantt.jpg" class="img-responsive" alt="">

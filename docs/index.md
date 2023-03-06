@@ -41,3 +41,18 @@ rumah sakit yang dipilih atau melalui fitur chat dengan dokter.</p>
 <img src="analisis-kompetitor/halodoc.jpg" class="img-responsive" alt="">
 <img src="analisis-kompetitor/alodokter.jpg" class="img-responsive" alt="">
 <img src="analisis-kompetitor/klikdokter.jpg" class="img-responsive" alt="">
+
+<h3> Use case diagram </h3>
+<img src="modul2/use case.jpg" class="img-responsive" alt="">
+
+<h3> ERD </h3>
+<img src="modul2/ERD.jpg" class="img-responsive" alt="">
+
+<h3> Low fidelity wireframe </h3>
+<img src="modul2/lofi (1).jpg" class="img-responsive" alt="">
+<img src="modul2/lofi (2).jpg" class="img-responsive" alt="">
+<img src="modul2/lofi (3).jpg" class="img-responsive" alt="">
+<img src="modul2/lofi (4).jpg" class="img-responsive" alt="">
+<img src="modul2/lofi (5).jpg" class="img-responsive" alt="">
+<img src="modul2/lofi (6).jpg" class="img-responsive" alt="">
+<img src="modul2/lofi (7).jpg" class="img-responsive" alt="">

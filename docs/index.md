@@ -42,8 +42,38 @@ rumah sakit yang dipilih atau melalui fitur chat dengan dokter.</p>
 <img src="analisis-kompetitor/alodokter.jpg" class="img-responsive" alt="">
 <img src="analisis-kompetitor/klikdokter.jpg" class="img-responsive" alt="">
 
+<h3> Tujuan produk </h3>
+<p> Tujuan dari produk kami yaitu doctorify yaitu dapat membantu meningkatkan aksesibilitas pelayanan kesehatan dengan memungkinkan pengguna untuk mencari dan memesan janji temu dengan mudah dan nyaman tanpa harus datang ke klinik atau rumah sakit. </p>
+
+<h3> Pengguna potensial </h3>
+<p> Pengguna potensial dari produk kami adalah 
+
+Pasien yang sibuk: pengguna ini memiliki jadwal yang sibuk mungkin tidak memiliki waktu untuk menelepon atau datang ke klinik atau rumah sakit untuk membuat janji temu dokter, sehingga mereka membutuhkan produk yang dapat membuat janji temu kapan saja dan di mana saja. 
+
+Pasien dengan mobilitas terbatas : pengguna ini memiliki mobilitas terbatas untuk bertemu dengan dokter secara langsung, maka dari itu mereka membutuhkan sebuah produk yang memungkinkan mereka untuk bertemu dengan dokter secara langsung 
+
+Pasien yang mencari kenyamanan: pengguna ini mencari kenyamanan dalam Mereka ingin dengan mudah memilih dokter yang mereka inginkan, meninjau jadwal dan ulasan sebelum membuat janji temu, dan bahkan melakukan pembayaran online. </p>
+
 <h3> Use case diagram </h3>
 <img src="modul2/use case.jpg" class="img-responsive" alt="">
+
+<h3> Functional Requirements </h3>
+
+<p> Signup : User dapat mendaftar untuk menggunakan layanan ini 
+
+Login : User dapat melakukan login sebagai pasien atau sebagai dokter 
+
+Memilih dokter spesialis untuk membuat janji : Pasien memilih dokter yang diinginkan sesuai dengan keluhan yang dialami 
+
+Memilih Jadwal dokter yang tersedia : Pasien dapat memilih jadwal yang tersedia dari dokter yang dipilih 
+
+Memberi review dokter setelah konsultas : Pasien memberikan review untuk dokter setelah sesi konsultasi selesai 
+
+Menerima atau menolak janji dengan dokter : Dokter dapat menolak atau menerima janji yang dibuat oleh pasien 
+
+Memberitahu janji yang dibuat pasien : Admin memberi tahu jadwal janji yang telah dibuat oleh pasien kepada dokter 
+
+Memberitahu jadwal yang tersedia : Dokter memberi tahu jadwal yang dokter yang tersedia kepada admin </p>
 
 <h3> ERD </h3>
 <img src="modul2/ERD.jpg" class="img-responsive" alt="">

@@ -29,7 +29,7 @@ const DoctorLayout = ({
             <form
                 onSubmit={onSubmit}
                 className={clsx(
-                    'flex w-[500px] flex-col items-center justify-center gap-9 rounded-2xl border border-cyan-800 bg-slate-200 px-10 py-8 shadow-md',
+                    'flex w-[500px] flex-col items-center justify-center gap-9 border border-b-8 border-t-8 border-cyan-800 bg-slate-200 px-10 py-8 shadow-md',
                     boxClassName
                 )}
             >

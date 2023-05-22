@@ -29,38 +29,42 @@ const SignUp = () => {
                 CREATE ACCOUNT
             </h1> */}
             <div className="flex w-full flex-col gap-4">
+                <p className="px-1 text-base">Email</p>
                 <TextField
                     control={control}
                     className="w-full"
                     name="email"
                     fieldName="email"
-                    placeholder="email"
+                    placeholder="Masukkan email anda"
                     type="email"
                     rules={{ required: true }}
                 />
+                <p className="px-1 text-base">Nama</p>
                 <TextField
                     control={control}
                     className="w-full"
                     name="username"
                     fieldName="Username"
-                    placeholder="Username"
+                    placeholder="masukkan username anda"
                     rules={{ required: true }}
                 />
+                <p className="px-1 text-base">Kata Sandi</p>
                 <TextField
                     control={control}
                     className="w-full"
                     name="password"
                     fieldName="password"
-                    placeholder="Password"
+                    placeholder="Masukkan kata sandi anda"
                     type="password"
                     rules={{ required: true }}
                 />
+                <p className="px-1 text-base">Konfirmasi Kata Sandi</p>
                 <TextField
                     control={control}
                     className="w-full"
                     name="confirm_password"
                     fieldName="Confirm Password"
-                    placeholder="Confirm Password"
+                    placeholder="Konfirmasi Kata Sandi Anda"
                     type="password"
                     rules={{ required: true }}
                 />
@@ -68,7 +72,7 @@ const SignUp = () => {
 
             <div className="flex w-full items-center justify-between">
                 <p className="text-sm">
-                    Already have an account?{' '}
+                    Sudah memiliki akun?{' '}
                     <a href="/login" className="font-semibold text-cyan-800">
                         Login
                     </a>

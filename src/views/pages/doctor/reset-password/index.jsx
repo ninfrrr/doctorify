@@ -46,8 +46,8 @@ const ResetPassword = () => {
     };
     return (
         <DoctorLayout onSubmit={handleSubmit(onSubmit)}>
-            <h1 className="w-full text-center text-2xl font-semibold">
-                Change password for @user
+            <h1 className="w-full text-center text-xl font-semibold">
+                Ganti kata sandi untuk @doctor
             </h1>
             <div className="flex w-full flex-col gap-4">
                 <TextField
@@ -71,7 +71,7 @@ const ResetPassword = () => {
             </div>
 
             <Button className="w-full" type="submit">
-                Change password
+                Ganti kata sandi
             </Button>
         </DoctorLayout>
     );

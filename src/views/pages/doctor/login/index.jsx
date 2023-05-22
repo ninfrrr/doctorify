@@ -25,21 +25,23 @@ const Login = () => {
             </a>
             {/* <h1 className="w-full text-center text-2xl font-semibold">Login</h1> */}
             <div className="flex w-full flex-col gap-4">
+                <p className="px-1 text-base">Email</p>
                 <TextField
                     control={control}
                     className="w-full"
-                    name="username"
-                    fieldName="Username"
-                    placeholder="Masukkan Email anda"
+                    name="email"
+                    fieldName="Email"
+                    placeholder="Masukkan email anda"
                     rules={{ required: true }}
                 />
+                <p className="px-1 text-base">Kata Sandi</p>
                 <div className="flex w-full flex-col items-end gap-2">
                     <TextField
                         control={control}
                         className="w-full"
                         name="password"
                         fieldName="Password"
-                        placeholder="Password"
+                        placeholder="Masukkan kata sandi anda"
                         type="password"
                         rules={{ required: true }}
                     />
@@ -47,14 +49,14 @@ const Login = () => {
                         href="/forgot-password"
                         className="text-sm text-cyan-800"
                     >
-                        Forgot password?
+                        Lupa kata sandi anda?
                     </a>
                 </div>
             </div>
 
             <div className="flex w-full items-center justify-between">
                 <p className="text-sm">
-                    Don’t have any account?{' '}
+                    Belum memiliki akun?{' '}
                     <a href="/signup" className="font-semibold text-cyan-800">
                         Sign Up
                     </a>

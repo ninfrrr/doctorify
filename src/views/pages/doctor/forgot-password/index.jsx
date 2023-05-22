@@ -19,7 +19,7 @@ const ForgotPassword = () => {
     return (
         <DoctorLayout onSubmit={handleSubmit(onSubmit)}>
             <h1 className="w-full text-center text-2xl font-semibold">
-                Reset your password
+                Atur ulang kata sandi anda
             </h1>
             <TextField
                 control={control}
@@ -32,7 +32,7 @@ const ForgotPassword = () => {
             />
 
             <Button className="w-full" type="submit">
-                Send password reset email
+                Kirim email pengaturan ulang kata sandi
             </Button>
         </DoctorLayout>
     );

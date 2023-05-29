@@ -1,16 +1,16 @@
 import clsx from 'clsx';
 
 /**
- * @typedef DoctorLayoutProps
+ * @typedef AdminLayoutProps
  * @property {React.ReactNode} children
  * @property {string} [className]
  * @property {string} [boxClassName]
  */
 
 /**
- * @param {DoctorLayoutProps} props
+ * @param {AdminLayoutProps} props
  */
-const DoctorLayout = ({
+const AdminLayout = ({
     children = null,
     className = '',
     boxClassName = '',
@@ -39,4 +39,4 @@ const DoctorLayout = ({
     );
 };
 
-export default DoctorLayout;
+export default AdminLayout;

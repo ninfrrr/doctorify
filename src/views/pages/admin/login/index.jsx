@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import Button from '@/views/elements/button';
 import TextField from '@/views/elements/text-field';
 
-import DoctorLayout from '@/views/layouts/doctor-layout';
+import AdminLayout from '@/views/layouts/admin-layout';
 import logo from '@/assets/images/logo.png';
 
 const Login = () => {
@@ -19,7 +19,7 @@ const Login = () => {
     };
 
     return (
-        <DoctorLayout onSubmit={handleSubmit(onSubmit)}>
+        <AdminLayout onSubmit={handleSubmit(onSubmit)}>
             <a href="/" className="flex items-center">
                 <img src={logo} className="h-15" alt="Doctorify Logo" />
             </a>
@@ -63,7 +63,7 @@ const Login = () => {
                 </p>
                 <Button type="submit">Login</Button>
             </div>
-        </DoctorLayout>
+        </AdminLayout>
     );
 };
 

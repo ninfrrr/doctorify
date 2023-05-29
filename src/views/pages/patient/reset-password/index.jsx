@@ -6,7 +6,7 @@ import StatusResult from '@/views/components/status-result';
 import Button from '@/views/elements/button';
 import TextField from '@/views/elements/text-field';
 
-import DoctorLayout from '@/views/layouts/doctor-layout';
+import PatientLayout from '@/views/layouts/patient-layout';
 
 const ResetPassword = () => {
     const [result, setResult] = useState();
@@ -45,9 +45,9 @@ const ResetPassword = () => {
         setResult('failed');
     };
     return (
-        <DoctorLayout onSubmit={handleSubmit(onSubmit)}>
+        <PatientLayout onSubmit={handleSubmit(onSubmit)}>
             <h1 className="w-full text-center text-xl font-semibold">
-                Ganti kata sandi untuk @doctor
+                Ganti kata sandi untuk @patient
             </h1>
             <div className="flex w-full flex-col gap-4">
                 <TextField
@@ -73,7 +73,7 @@ const ResetPassword = () => {
             <Button className="w-full" type="submit">
                 Ganti kata sandi
             </Button>
-        </DoctorLayout>
+        </PatientLayout>
     );
 };
 

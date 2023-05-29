@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import Button from '@/views/elements/button';
 import TextField from '@/views/elements/text-field';
 
-import DoctorLayout from '@/views/layouts/doctor-layout';
+import PatientLayout from '@/views/layouts/patient-layout';
 
 const ForgotPassword = () => {
     const { control, handleSubmit } = useForm({
@@ -17,7 +17,7 @@ const ForgotPassword = () => {
     };
 
     return (
-        <DoctorLayout onSubmit={handleSubmit(onSubmit)}>
+        <PatientLayout onSubmit={handleSubmit(onSubmit)}>
             <h1 className="w-full text-center text-2xl font-semibold">
                 Atur ulang kata sandi anda
             </h1>
@@ -34,7 +34,7 @@ const ForgotPassword = () => {
             <Button className="w-full" type="submit">
                 Kirim email pengaturan ulang kata sandi
             </Button>
-        </DoctorLayout>
+        </PatientLayout>
     );
 };
 

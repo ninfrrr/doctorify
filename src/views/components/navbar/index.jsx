@@ -60,6 +60,14 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
+                            href="/history"
+                            className="hover:text-hijau text-white"
+                        >
+                            Riwayat
+                        </a>
+                    </li>
+                    <li>
+                        <a
                             href="/about_us"
                             className="hover:text-hijau text-white"
                         >

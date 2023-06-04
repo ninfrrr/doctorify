@@ -18,6 +18,7 @@ import ResetPassword from '@/views/pages/patient/reset-password';
 import ActivateAccount from '@/views/pages/patient/activate';
 import History from '@/views/pages/history';
 import Appointment from '@/views/pages/appointment';
+import Review from '@/views/pages/review';
 // import UserPage from '@/views/pages/user';
 // import ArtDetailPage from '@/views/pages/art/detail';
 // import ArtNewPage from '@/views/pages/art/new';
@@ -73,6 +74,10 @@ const PatientRoutes = [
     {
         path: '/appointment',
         element: <Appointment />
+    },
+    {
+        path: '/review',
+        element: <Review />
     }
 ];
 

@@ -10,6 +10,10 @@ const History = () => {
                     Lihat Riwayat Appointment Anda
                 </h1>
             </div>
+            <div class="grid grid-cols-2">
+                <div class="bg-red-500">Bagian 1</div>
+                <div class="bg-blue-500">Bagian 2</div>
+            </div>
         </MainLayout>
     );
 };

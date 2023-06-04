@@ -9,8 +9,8 @@ const Appointment = () => {
                     Isi Form Appointment Anda
                 </h1>
             </div>
-            <div className="h-full px-5 lg:px-[100px] xl:px-[150px]">
-                <div className="flex flex-col md:justify-between lg:flex-row">
+            <div className="lg:px-[100px] xl:px-[150px]">
+                <div className="flex h-screen flex-col md:justify-between lg:flex-row">
                     <form className="mb-10 bg-slate-200 lg:w-[450px] xl:w-[700px]">
                         <h1 className=" py-5 text-center text-xl font-bold text-cyan-500">
                             Dr.XXXXXXX S.POK

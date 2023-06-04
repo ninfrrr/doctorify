@@ -21,7 +21,13 @@ const Navbar = () => {
 
     return (
         <header className="sticky top-0 flex h-16 items-center justify-between border-b border-slate-300 bg-cyan-800 px-6 py-4">
-            <img src={logo_doctorify} className="h-14" alt="Doctorify Logo" />
+            <a href="/">
+                <img
+                    src={logo_doctorify}
+                    className="h-14"
+                    alt="Doctorify Logo"
+                />
+            </a>
             <div className="hidden md:flex">
                 <ul className="flex items-center gap-10 font-medium">
                     <li>
@@ -43,6 +49,14 @@ const Navbar = () => {
                             className="hover:text-hijau text-white"
                         >
                             Tentang Kami
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/history"
+                            className="hover:text-hijau text-white"
+                        >
+                            Riwayat
                         </a>
                     </li>
                 </ul>

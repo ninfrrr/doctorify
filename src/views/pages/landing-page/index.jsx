@@ -8,7 +8,7 @@ const LandingPage = () => {
             <div className="bg-hijau-muda z-10 flex h-full flex-col-reverse items-center px-[50px] py-[50px] md:grid md:h-[100vh] md:grid-cols-2 md:gap-[100px] md:px-[100px] lg:gap-[200px] xl:px-[200px] xl:pb-[100px]">
                 <div className="text-hitam justify-center text-center md:text-justify">
                     <p className="text-3xl font-bold leading-normal lg:text-4xl lg:leading-normal">
-                        Selalu Melayani Anda <br /> Dengan Hati
+                        Selalu Melayani Anda <br /> dengan Hati
                     </p>
                     <p className="my-5 lg:leading-normal">
                         Cari dokter terbaik yang cocok untuk Anda dan dapatkan

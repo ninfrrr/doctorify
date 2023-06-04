@@ -61,6 +61,17 @@ const Navbar = () => {
                     <li>
                         <a
                             href="/history"
+<<<<<<< HEAD:src/views/components/navbar/main/index.jsx
+=======
+                            className="hover:text-hijau text-white"
+                        >
+                            Riwayat
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/about_us"
+>>>>>>> 2014ca6d484c94466a3b176b35e06359200a1d3b:src/views/components/navbar/index.jsx
                             className="hover:text-hijau text-white"
                         >
                             Riwayat

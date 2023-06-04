@@ -68,5 +68,5 @@
 }
 
 * {
-    @apply font-poppin text-slate-900;
+    @apply text-slate-900 font-poppin;
 }

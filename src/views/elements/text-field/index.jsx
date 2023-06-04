@@ -65,13 +65,13 @@ const TextField = ({
             <Label />
             <div className="relative w-full">
                 {icon && (
-                    <Icon className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-900" />
+                    <Icon className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-white" />
                 )}
                 <input
                     type={type}
                     placeholder={placeholder}
                     className={clsx(
-                        'w-full rounded-lg border border-slate-300 bg-slate-100 px-4 py-3 text-slate-900 placeholder:font-light placeholder:text-slate-400 focus:outline-slate-400',
+                        'w-full rounded-lg border border-slate-300 bg-cyan-700 px-4 py-3 text-white placeholder:font-light placeholder:text-white focus:outline-slate-400',
                         fieldState.error &&
                             '!border-2 !border-red-500 !text-red-500 focus:!outline-red-500',
                         Icon && 'pl-10',

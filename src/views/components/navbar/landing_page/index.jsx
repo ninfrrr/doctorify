@@ -3,32 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import {
     ArrowLeftOnRectangleIcon,
     Cog6ToothIcon,
-    MagnifyingGlassIcon,
     UserCircleIcon
 } from '@heroicons/react/24/outline';
 
-import Dropdown from '@/views/components/dropdown';
 import Button from '@/views/elements/button';
-import TextField from '@/views/elements/text-field';
 import logo_doctorify from '@/assets/images/logo_2.png';
-
-const menuOptions = [
-    {
-        icon: UserCircleIcon,
-        name: 'profile',
-        text: 'My Account'
-    },
-    {
-        icon: Cog6ToothIcon,
-        name: 'settings',
-        text: 'Settings'
-    },
-    {
-        icon: ArrowLeftOnRectangleIcon,
-        name: 'logout',
-        text: 'Log out'
-    }
-];
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -69,8 +48,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="flex items-center gap-2">
-                <Button variant="secondary">Masuk</Button>
-                <Button>Daftar</Button>
+                <Button href="/login" variant="secondary">
+                    Masuk
+                </Button>
+                <Button href="/signup">Daftar</Button>
             </div>
         </header>
     );

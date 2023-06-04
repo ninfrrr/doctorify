@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import Navbar from '@/views/components/navbar/main';
+import Navbar from '@/views/components/navbar/landing_page';
 import Footer from '@/views/components/footer';
 
 /**
@@ -14,7 +14,7 @@ const MainLayout = ({ children = null }) => {
     return (
         <div>
             <Navbar />
-            <main className="bg-white">{children}</main>
+            <main className="bg-slate-200">{children}</main>
             <Footer />
         </div>
     );

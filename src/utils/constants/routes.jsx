@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import ErrorPage from '@/views/pages/error';
-import HomePage from '@/views/pages/home';
+import LandingPage from '@/views/pages/landing-page';
 import SearchPage from '@/views/pages/search';
 import AboutUsPage from '@/views/pages/about_us';
 
@@ -16,6 +16,8 @@ import SignUp from '@/views/pages/patient/signup';
 import ForgotPassword from '@/views/pages/patient/forgot-password';
 import ResetPassword from '@/views/pages/patient/reset-password';
 import ActivateAccount from '@/views/pages/patient/activate';
+import History from '@/views/pages/history';
+import Appointment from '@/views/pages/appointment';
 // import UserPage from '@/views/pages/user';
 // import ArtDetailPage from '@/views/pages/art/detail';
 // import ArtNewPage from '@/views/pages/art/new';
@@ -63,6 +65,14 @@ const PatientRoutes = [
     {
         path: '/activate',
         element: <ActivateAccount />
+    },
+    {
+        path: '/history',
+        element: <History />
+    },
+    {
+        path: '/appointment',
+        element: <Appointment />
     }
 ];
 
@@ -71,7 +81,7 @@ const routes = createBrowserRouter([
     ...PatientRoutes,
     {
         path: '/',
-        element: <HomePage />,
+        element: <LandingPage />,
         errorElement: <ErrorPage />
     },
     {

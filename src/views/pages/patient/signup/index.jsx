@@ -10,9 +10,8 @@ const SignUp = () => {
     const { control, handleSubmit } = useForm({
         defaultValues: {
             email: '',
-            username: '',
-            password: '',
-            confirm_password: ''
+            name: '',
+            password: ''
         }
     });
 
@@ -29,6 +28,15 @@ const SignUp = () => {
                 CREATE ACCOUNT
             </h1> */}
             <div className="flex w-full flex-col gap-4">
+                <p className="px-1 text-base">Nama</p>
+                <TextField
+                    control={control}
+                    className="w-full"
+                    name="name"
+                    fieldName="name"
+                    placeholder="masukkan nama anda"
+                    rules={{ required: true }}
+                />
                 <p className="px-1 text-base">Email</p>
                 <TextField
                     control={control}
@@ -39,15 +47,6 @@ const SignUp = () => {
                     type="email"
                     rules={{ required: true }}
                 />
-                <p className="px-1 text-base">Nama</p>
-                <TextField
-                    control={control}
-                    className="w-full"
-                    name="username"
-                    fieldName="Username"
-                    placeholder="masukkan username anda"
-                    rules={{ required: true }}
-                />
                 <p className="px-1 text-base">Kata Sandi</p>
                 <TextField
                     control={control}
@@ -55,16 +54,6 @@ const SignUp = () => {
                     name="password"
                     fieldName="password"
                     placeholder="Masukkan kata sandi anda"
-                    type="password"
-                    rules={{ required: true }}
-                />
-                <p className="px-1 text-base">Konfirmasi Kata Sandi</p>
-                <TextField
-                    control={control}
-                    className="w-full"
-                    name="confirm_password"
-                    fieldName="Confirm Password"
-                    placeholder="Konfirmasi Kata Sandi Anda"
                     type="password"
                     rules={{ required: true }}
                 />

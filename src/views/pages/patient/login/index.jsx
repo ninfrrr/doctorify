@@ -13,13 +13,14 @@ const Login = () => {
             password: ''
         }
     });
-    const onSubmit = async() => {
-        const data=await axios.post('http://localhost:8000/api/login',{
+    const onSubmit = async () => {
+        const data = await axios.post('http://localhost:8000/api/login', {
             email: 'admin@email.com',
-            password:'rahasia123'})
-        localStorage.setItem('userInfo', JSON.stringify(data))
-        console.log(data)
-        window.location.href='/'
+            password: 'rahasia123'
+        });
+        localStorage.setItem('userInfo', JSON.stringify(data));
+        console.log(data);
+        window.location.href = '/home';
     };
     return (
         <PatientLayout onSubmit={handleSubmit(onSubmit)}>

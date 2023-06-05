@@ -13,9 +13,6 @@ import Activate from '@/views/pages/admin/activate';
 
 import Login from '@/views/pages/patient/login';
 import SignUp from '@/views/pages/patient/signup';
-import ForgotPassword from '@/views/pages/patient/forgot-password';
-import ResetPassword from '@/views/pages/patient/reset-password';
-import ActivateAccount from '@/views/pages/patient/activate';
 import History from '@/views/pages/history';
 import Appointment from '@/views/pages/appointment';
 import Review from '@/views/pages/review';
@@ -54,18 +51,6 @@ const PatientRoutes = [
     {
         path: '/signup',
         element: <SignUp />
-    },
-    {
-        path: '/forgot-password',
-        element: <ForgotPassword />
-    },
-    {
-        path: '/reset-password',
-        element: <ResetPassword />
-    },
-    {
-        path: '/activate',
-        element: <ActivateAccount />
     },
     {
         path: '/history',

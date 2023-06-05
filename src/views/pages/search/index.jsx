@@ -100,30 +100,30 @@ const Search = () => {
                 </h1>
             </div>
             <div className="overflow-hidden">
-            <form
-                className="flex w-full items-center gap-0 px-20 lg:px-20 mb-10"
-                onSubmit={handleSubmit(onSubmitSearch)}
-            >
-                <TextField
-                    control={control}
-                    icon={MagnifyingGlassIcon}
-                    name="search"
-                    placeholder="Temukan Dokter"
-                    resetField={() => resetField('search')}
-                    className="w-full z-40 relative"
-                    inputClassName="!py-2.5"
-                    action={
-                        <button
-                            type="submit"
-                            className="w-12 rounded border border-slate-300 bg-white py-1 text-sm transition-all hover:bg-slate-200"
-                        >
-                            Go
-                        </button>
-                    }
-                />
-            </form>
+                <form
+                    className="mb-10 flex w-full items-center gap-0 px-20 lg:px-20"
+                    onSubmit={handleSubmit(onSubmitSearch)}
+                >
+                    <TextField
+                        control={control}
+                        icon={MagnifyingGlassIcon}
+                        name="search"
+                        placeholder="Temukan Dokter"
+                        resetField={() => resetField('search')}
+                        className="relative z-40 w-full"
+                        inputClassName="!py-2.5"
+                        action={
+                            <button
+                                type="submit"
+                                className="w-12 rounded border border-slate-300 bg-white py-1 text-sm transition-all hover:bg-slate-200"
+                            >
+                                Go
+                            </button>
+                        }
+                    />
+                </form>
             </div>
-            <div className="mx-[20px] md:mx-0 overflow-y-auto">
+            <div className="mx-[20px] overflow-y-auto md:mx-0">
                 {data.map(find => {
                     return (
                         <FindDoctor

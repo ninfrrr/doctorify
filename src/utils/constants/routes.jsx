@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import Home from '@/views/pages/home';
 import ErrorPage from '@/views/pages/error';
 import LandingPage from '@/views/pages/landing-page';
 import SearchPage from '@/views/pages/search';
@@ -72,6 +73,11 @@ const routes = createBrowserRouter([
     {
         path: '/',
         element: <LandingPage />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: '/home',
+        element: <Home />,
         errorElement: <ErrorPage />
     },
     {

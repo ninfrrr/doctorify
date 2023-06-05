@@ -9,7 +9,7 @@ import axios from 'axios';
 const Login = () => {
     const { control, handleSubmit } = useForm({
         defaultValues: {
-            username: '',
+            name: '',
             password: ''
         }
     });

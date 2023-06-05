@@ -6,6 +6,8 @@ import TextField from '@/views/elements/text-field';
 import PatientLayout from '@/views/layouts/patient-layout';
 import logo from '@/assets/images/logo.png';
 
+import axios from 'axios';
+
 const SignUp = () => {
     const { control, handleSubmit } = useForm({
         defaultValues: {
@@ -15,8 +17,17 @@ const SignUp = () => {
         }
     });
 
-    const onSubmit = () => {
-        alert('submitted');
+    const onSubmit = async () => {
+        const endpoint = import.meta.env.VITE_BACKEND_URL + 'register';
+        axios
+            .post(endpoint, {
+                name: ' ',
+                password: ' ',
+                email: ' '
+            })
+            .then(res => console.log(res))
+            .catch(err => console.error(err));
+        window.location.href = '/login';
     };
 
     return (

@@ -4,11 +4,9 @@ import Button from '@/views/elements/button';
 const Review = () => {
     return (
         <MainLayout>
-            <div className="pb-[50px] md:px-[200px]">
-                <h1 className="flex justify-center py-14 text-center text-xl font-bold leading-10 md:text-2xl">
+                <h1 className="flex justify-center py-10 mb-2 text-center text-xl font-bold leading-10 md:text-2xl">
                     Review Doctor
                 </h1>
-            </div>
             <div className="lg:px-[100px] xl:px-[150px]">
                 <div className="flex h-screen flex-col items-center md:justify-between lg:flex-row">
                     <form className="mb-10 lg:w-[550px] xl:w-[800px]">
@@ -24,22 +22,22 @@ const Review = () => {
                             Spesialis XXXXXXXXXXXX
                         </h1>
                     </form>
-                    <form className="bg-textfield p-10 lg:w-[450px] xl:w-[700px]">
+                    <form className="rounded-md bg-textfield p-10 lg:w-[450px] xl:w-[700px]">
                         <h5 className="mb-8 text-center text-xl font-bold">
-                            Silahkan beri review dokter
+                            Silakan beri review dokter
                         </h5>
                         <div class="mb-6">
-                            <input
+                            <textarea
                                 type="subjek"
                                 id="subjek"
-                                class=" sm-light block h-20 w-full whitespace-normal rounded-md border bg-slate-200 bg-slate-200 p-2.5 text-sm dark:placeholder-black"
+                                class="overflow-hidden whitespace-nowrap sm:whitespace-normal block h-20 w-full rounded-md border bg-slate-200 p-2.5 text-sm dark:placeholder-black"
                                 placeholder="Masukkan review anda disini"
                                 required
-                            ></input>
+                            ></textarea>
                         </div>
                         <Button
                             type="submit"
-                            className="float-right w-1/4 rounded-none text-sm font-semibold"
+                            className="float-right w-1/4 rounded-md border text-sm font-semibold"
                         >
                             Submit
                         </Button>

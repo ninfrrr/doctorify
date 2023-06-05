@@ -6,6 +6,8 @@ import TextField from '@/views/elements/text-field';
 import AdminLayout from '@/views/layouts/admin-layout';
 import logo from '@/assets/images/logo.png';
 
+import axios from 'axios';
+
 const Login = () => {
     const { control, handleSubmit } = useForm({
         defaultValues: {
@@ -14,7 +16,17 @@ const Login = () => {
         }
     });
 
-    const onSubmit = () => {
+    const onSubmit = () => async() => {
+        try {
+            const data=await axios.post('localhost:8000/api/login',{
+                email: 'admin@email.com',
+                password:'rahasia123'
+            })
+            console.log(data)
+            console.log('ya')
+        } catch (error) {
+            console.log(error)
+        }
         alert('submitted');
     };
 

@@ -5,7 +5,7 @@ import TextField from '@/views/elements/text-field';
 
 import PatientLayout from '@/views/layouts/patient-layout';
 import logo from '@/assets/images/logo.png';
-
+import axios from 'axios';
 const Login = () => {
     const { control, handleSubmit } = useForm({
         defaultValues: {
@@ -13,11 +13,14 @@ const Login = () => {
             password: ''
         }
     });
-
-    const onSubmit = () => {
-        alert('submitted');
+    const onSubmit = async() => {
+        const data=await axios.post('http://localhost:8000/api/login',{
+            email: 'admin@email.com',
+            password:'rahasia123'})
+        localStorage.setItem('userInfo', JSON.stringify(data))
+        console.log(data)
+        window.location.href='/'
     };
-
     return (
         <PatientLayout onSubmit={handleSubmit(onSubmit)}>
             <a href="/" className="flex items-center">

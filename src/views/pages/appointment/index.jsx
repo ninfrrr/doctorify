@@ -5,7 +5,7 @@ const Appointment = () => {
     return (
         <MainLayout>
             <div className="pb-[50px] md:px-[200px]">
-                <h1 className="flex justify-center py-14 text-center text-xl font-bold leading-10 md:text-2xl">
+                <h1 className="flex justify-center pt-4 mt-5 text-center text-xl font-bold leading-10 md:text-2xl">
                     Isi Form Appointment Anda
                 </h1>
             </div>
@@ -20,7 +20,7 @@ const Appointment = () => {
                             className="px-40"
                             alt="image doctor"
                         ></img>
-                        <h1 className=" py-5 text-center text-lg font-semibold">
+                        <h1 className="py-5 text-center text-lg font-semibold">
                             Spesialis XXXXXXXXXXXX
                         </h1>
                         <div className="border-hitam border-b-2 p-5">
@@ -40,14 +40,14 @@ const Appointment = () => {
                             <p>Review dokter blablabla</p>
                         </div>
                     </form>
-                    <form className="h-full bg-slate-200 p-24 lg:w-[450px] xl:w-[700px]">
+                    <form className="h-screen bg-slate-200 p-20 lg:w-[450px] xl:w-[700px]">
                         <h5 className="mb-8 text-center text-xl font-bold">
                             Buat Janji Temu
                         </h5>
                         <div class="mb-6">
                             <label
                                 for="subjek"
-                                class="text-md mb-2 block font-semibold text-gray-900"
+                                class="text-md mb-2 block font-semibold text-gray-900 rounded-md"
                             >
                                 Subjek
                             </label>
@@ -99,7 +99,7 @@ const Appointment = () => {
                         </div>
                         <Button
                             type="submit"
-                            className="w-1/2 rounded-none text-sm font-semibold"
+                            className="w-1/2 rounded-md text-sm font-semibold"
                         >
                             Buat Janji Temu
                         </Button>

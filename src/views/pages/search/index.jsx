@@ -94,13 +94,14 @@ const Search = () => {
     };
     return (
         <MainLayout>
-            <div className="pb-[50px] md:px-[200px]">
-                <h1 className="flex justify-center py-14 text-center text-xl font-bold leading-10 md:text-2xl">
+            <div className="pb-[5px] md:px-[200px]">
+                <h1 className="mb-50 flex justify-center py-14 text-center text-xl font-bold leading-10 md:text-2xl">
                     Cari Dokter Sesuai Kebutuhan Anda!
                 </h1>
             </div>
+            <div className="overflow-hidden">
             <form
-                className="flex w-full items-center gap-0 px-20 lg:px-20"
+                className="flex w-full items-center gap-0 px-20 lg:px-20 mb-10"
                 onSubmit={handleSubmit(onSubmitSearch)}
             >
                 <TextField
@@ -109,7 +110,7 @@ const Search = () => {
                     name="search"
                     placeholder="Temukan Dokter"
                     resetField={() => resetField('search')}
-                    className="w-full"
+                    className="w-full z-40 relative"
                     inputClassName="!py-2.5"
                     action={
                         <button
@@ -121,10 +122,12 @@ const Search = () => {
                     }
                 />
             </form>
-            <div className="mx-[20px] md:mx-0">
+            </div>
+            <div className="mx-[20px] md:mx-0 overflow-y-auto">
                 {data.map(find => {
                     return (
                         <FindDoctor
+                            key={find.id}
                             id={find.id}
                             nama={find.nama}
                             spesialisasi={find.spesialisasi}

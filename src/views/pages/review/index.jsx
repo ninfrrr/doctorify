@@ -4,13 +4,13 @@ import Button from '@/views/elements/button';
 const Review = () => {
     return (
         <MainLayout>
-                <h1 className="flex justify-center py-10 mb-2 text-center text-xl font-bold leading-10 md:text-2xl">
+                <h1 className="flex justify-center pt-4 mt-5 text-center text-xl font-bold leading-10 md:text-2xl">
                     Review Doctor
                 </h1>
-            <div className="lg:px-[100px] xl:px-[150px]">
-                <div className="flex h-screen flex-col items-center md:justify-between lg:flex-row">
-                    <form className="mb-10 lg:w-[550px] xl:w-[800px]">
-                        <h1 className=" py-5 text-center text-xl font-bold text-cyan-500">
+            <div className="lg:px-[100px] xl:px-[150px] pt-1">
+                <div className="flex flex-col items-center md:justify-between lg:flex-row">
+                    <form className="mb-40 lg:w-[550px] xl:w-[800px] mt-1">
+                        <h1 className="py-5 text-center text-xl font-bold text-cyan-500">
                             Dr.XXXXXXX S.POK
                         </h1>
                         <img
@@ -18,11 +18,11 @@ const Review = () => {
                             className="px-40"
                             alt="image doctor"
                         ></img>
-                        <h1 className=" py-5 text-center text-lg font-semibold">
+                        <h1 className="py-5 text-center text-lg font-semibold">
                             Spesialis XXXXXXXXXXXX
                         </h1>
                     </form>
-                    <form className="rounded-md bg-textfield p-10 lg:w-[450px] xl:w-[700px]">
+                    <form className="mb-40 rounded-md bg-textfield p-10 lg:w-[450px] xl:w-[700px]">
                         <h5 className="mb-8 text-center text-xl font-bold">
                             Silakan beri review dokter
                         </h5>

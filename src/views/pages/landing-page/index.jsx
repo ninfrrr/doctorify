@@ -8,7 +8,7 @@ const LandingPage = () => {
             <div className="bg-hijau-muda z-10 flex h-full flex-col-reverse items-center px-[50px] py-[50px] md:grid md:h-[100vh] md:grid-cols-2 md:gap-[100px] md:px-[100px] lg:gap-[200px] xl:px-[200px] xl:pb-[100px]">
                 <div className="text-hitam justify-center text-center md:text-justify">
                     <p className="text-3xl font-bold leading-normal lg:text-4xl lg:leading-normal">
-                        Selalu Melayani Anda <br /> dengan Hati
+                        Selalu melayani Anda <br /> dengan hati
                     </p>
                     <p className="my-5 lg:leading-normal">
                         Cari dokter terbaik yang cocok untuk Anda dan dapatkan
@@ -31,7 +31,7 @@ const LandingPage = () => {
                     data-aos="fade-up"
                     className="font-poppins text-hitam mb-12 px-5 text-center text-2xl font-bold md:text-3xl xl:text-4xl"
                 >
-                    4 Langkah Mudah Menggunakan Doc.In
+                    4 Langkah Mudah Menggunakan Doctorify
                 </p>
                 <div
                     data-aos="fade-up"
@@ -58,7 +58,7 @@ const LandingPage = () => {
                         </p>
                         <p className="text-hitam font-poppins mt-3 w-[280px] text-base font-[500] md:mt-0">
                             Masuk atau buat akun dengan email agar dapat
-                            mengakses fitur Doc.In secara lengkap.
+                            mengakses fitur Doctorify secara lengkap.
                         </p>
                     </div>
                     <div className="mt-0 flex flex-col items-center">
@@ -143,11 +143,11 @@ const LandingPage = () => {
                 ></img>
                 <div className="text-hitam justify-center text-center md:text-justify">
                     <p className="text-3xl font-bold leading-normal lg:text-4xl lg:leading-normal">
-                        Konsultasi ke dokter <br /> kapan dan dimana saja dengan
+                        Konsultasi ke dokter <br /> kapan dan di mana saja dengan
                         Doctorify
                     </p>
                     <p className="my-5 lg:leading-normal">
-                        Dengan Docotorify anda bisa menemukan dokter spesialis
+                        Dengan Doctorify anda bisa menemukan dokter spesialis
                         sesuai dengan kebutuhan anda dengan review dari pengguna
                         lainnya
                     </p>

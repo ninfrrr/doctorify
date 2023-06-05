@@ -41,7 +41,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="sticky top-0 flex h-16 items-center justify-between border-b border-slate-300 bg-cyan-800 px-6 py-4">
+        <header className="sticky top-0 flex z-50 h-16 items-center justify-between border-b border-slate-300 bg-cyan-800 px-6 py-4">
             <a href="/">
                 <img
                     src={logo_doctorify}

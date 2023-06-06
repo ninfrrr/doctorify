@@ -16,7 +16,8 @@ const FindDoctor = ({
     nama = '',
     spesialisasi = '',
     harga = '',
-    imgdoctor = ''
+    imgdoctor = '',
+    reviewDoctor = ''
 }) => {
     return (
         <div className="my-[10px] flex border bg-slate-200">
@@ -39,6 +40,10 @@ const FindDoctor = ({
                     >
                         Buat Janji
                     </Button>
+                </div>
+                <div>
+                    <p className="text-[16px] font-bold">Review:</p>
+                    <p>{reviewDoctor}</p>
                 </div>
             </div>
         </div>

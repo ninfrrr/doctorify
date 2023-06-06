@@ -7,27 +7,27 @@ import PatientLayout from '@/views/layouts/patient-layout';
 import logo from '@/assets/images/logo.png';
 
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
     const { control, handleSubmit } = useForm({
         defaultValues: {
-            email: '',
             name: '',
+            email: '',
             password: ''
         }
     });
 
-    const onSubmit = async () => {
+    const onSubmit = async ({ name, email, password }) => {
         const endpoint = import.meta.env.VITE_BACKEND_URL + 'register';
         axios
             .post(endpoint, {
-                name: ' ',
-                password: ' ',
-                email: ' '
+                name: name,
+                email: email,
+                password: password
             })
             .then(res => console.log(res))
             .catch(err => console.error(err));
-        window.location.href = '/login';
     };
 
     return (

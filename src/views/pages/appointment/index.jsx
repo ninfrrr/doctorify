@@ -5,7 +5,7 @@ const Appointment = () => {
     return (
         <MainLayout>
             <div className="pb-[50px] md:px-[200px]">
-                <h1 className="flex justify-center pt-4 mt-5 text-center text-xl font-bold leading-10 md:text-2xl">
+                <h1 className="mt-5 flex justify-center pt-4 text-center text-xl font-bold leading-10 md:text-2xl">
                     Isi Form Appointment Anda
                 </h1>
             </div>
@@ -47,7 +47,7 @@ const Appointment = () => {
                         <div class="mb-6">
                             <label
                                 for="subjek"
-                                class="text-md mb-2 block font-semibold text-gray-900 rounded-md"
+                                class="text-md mb-2 block rounded-md font-semibold text-gray-900"
                             >
                                 Subjek
                             </label>

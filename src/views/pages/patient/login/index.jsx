@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form';
+// import { useHistory } from 'react-router-dom';
 
 import Button from '@/views/elements/button';
 import TextField from '@/views/elements/text-field';
@@ -6,6 +7,8 @@ import TextField from '@/views/elements/text-field';
 import PatientLayout from '@/views/layouts/patient-layout';
 import logo from '@/assets/images/logo.png';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 const Login = () => {
     const { control, handleSubmit } = useForm({
         defaultValues: {
@@ -13,14 +16,30 @@ const Login = () => {
             password: ''
         }
     });
-    const onSubmit = async () => {
-        const data = await axios.post('http://localhost:8000/api/login', {
-            email: 'admin@email.com',
-            password: 'rahasia123'
-        });
-        localStorage.setItem('userInfo', JSON.stringify(data));
-        console.log(data);
-        window.location.href = '/home';
+
+    // const history = useHistory();
+    const navigate = useNavigate();
+
+    const onSubmit = async ({ email, password }) => {
+        const endpoint = import.meta.env.VITE_BACKEND_URL + 'login';
+        axios
+            .post(endpoint, {
+                email: email,
+                password: password
+            })
+            .then(res => {
+                const result = res.data.result;
+                console.log(result);
+                localStorage.setItem('access_token', result.access_token);
+                localStorage.setItem('token_type', result.token_type);
+                localStorage.setItem('user', JSON.stringify(result.user));
+                navigate('/home');
+            })
+            .catch(err => {
+                console.error(err);
+                // bisa ganti ke notification kalo ada
+                alert('Email atau password salah');
+            });
     };
     return (
         <PatientLayout onSubmit={handleSubmit(onSubmit)}>

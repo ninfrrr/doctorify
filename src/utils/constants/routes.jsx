@@ -11,6 +11,7 @@ import SignUpPage from '@/views/pages/admin/signup';
 import ForgotPasswordPage from '@/views/pages/admin/forgot-password';
 import ResetPasswordPage from '@/views/pages/admin/reset-password';
 import Activate from '@/views/pages/admin/activate';
+import ListAppointment from '@/views/pages/list-appointment';
 
 import Login from '@/views/pages/patient/login';
 import SignUp from '@/views/pages/patient/signup';
@@ -41,6 +42,10 @@ const AdminRoutes = [
     {
         path: '/admin-activate',
         element: <Activate />
+    },
+    {
+        path: '/list-appointment',
+        element: <ListAppointment />
     }
 ];
 

@@ -3,11 +3,32 @@ import { useNavigate } from 'react-router-dom';
 import {
     ArrowLeftOnRectangleIcon,
     Cog6ToothIcon,
+    MagnifyingGlassIcon,
     UserCircleIcon
 } from '@heroicons/react/24/outline';
 
+import Dropdown from '@/views/components/dropdown';
 import Button from '@/views/elements/button';
+import TextField from '@/views/elements/text-field';
 import logo_doctorify from '@/assets/images/logo_2.png';
+
+const menuOptions = [
+    {
+        icon: UserCircleIcon,
+        name: 'profile',
+        text: 'My Account'
+    },
+    {
+        icon: Cog6ToothIcon,
+        name: 'settings',
+        text: 'Settings'
+    },
+    {
+        icon: ArrowLeftOnRectangleIcon,
+        name: 'logout',
+        text: 'Log out'
+    }
+];
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -20,8 +41,8 @@ const Navbar = () => {
     };
 
     return (
-        <header className="sticky top-0 flex h-16 items-center justify-between border-b border-slate-300 bg-cyan-800 px-6 py-4">
-            <a href="/">
+        <header className="sticky top-0 z-50 flex h-16 items-center justify-between border-b border-slate-300 bg-cyan-800 px-6 py-4">
+            <a href="/home">
                 <img
                     src={logo_doctorify}
                     className="h-14"
@@ -37,27 +58,13 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            href="/search"
+                            href="/list-appointment"
                             className="hover:text-hijau text-white"
                         >
-                            Cari Dokter
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/about_us"
-                            className="hover:text-hijau text-white"
-                        >
-                            Tentang Kami
+                            Appointment
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div className="flex items-center gap-2">
-                <Button href="/login" variant="secondary">
-                    Masuk
-                </Button>
-                <Button href="/signup">Daftar</Button>
             </div>
         </header>
     );
